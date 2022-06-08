@@ -40,8 +40,6 @@ def close_window():
 
 def parsing_loop(mqttData):
     
-    #mqttData = 'dateTimestamp;dateTimestampUtc;iValue29;vGPSlongitude;vGPSlatitude;iValue26;vDEFlevel;vGSMsignalQuality;vGPSsignalQuality;vPrimaryStatus;vGroundSpeed;iValue28;iValue27;statYieldTonsHa;alarmCritical;alarmFiltersOil;alarmEngine;iValue1;iValue2;iValue3;iValue4;iValue5;iValue6;iValue7;iValue8;iValue9;iValue10;iValue11;iValue12;iValue13;iValue14;iValue15;iValue16;iValue17;iValue18;iValue19;iValue20;iValue21;iValue22;iValue23;iValue24;iValue25;bValue10;bValue11;alarmShafts;alarmPropelSystem;alarmElectrical;alarmTemperature;vGPSaltitude;vGPScompassBearing;vSecundaryStatus;vCustomDistance;vCustomHectars;vCustomTons;fValue2;vEngCoolantTemp;vEngSpd;vEngLoad;vEngFuelrate;vEngIntakeManTemp;|2022-06-03 12:44:25.982;2022-06-03 15:40:03.571;0.00;-78.0909347534;43.0608367920;0.00;0.00;-77;50;1;0.00;0.0;0.0;;0;0;0;0.00;0.00;0.00;0.00;0.00;0.00;0.00;0.00;0.00;0.00;0.00;0.00;0.00;0.00;0.00;0.00;0.00;0.00;0.00;0.00;0.00;0.00;0.00;0.00;0.00;0;0.00;0;0;0;0;0.00;0.00;;0.0;0.00;0.0;0.0;0.0;;;;0.0;'
-
     mqttData_split = mqttData.split(';')
     mqttData_len = len(mqttData_split)
     half_len = mqttData_len / 2
