@@ -75,8 +75,12 @@ def click():
 window = Tk()
 window.title("MQTT READER")
 window.configure(background="black")
+### To add: scrolling since these lists are long
+#### also, fix the format, maybe make it into a table
+#### only show variables with actual values
+#### outputs a list with entities that have a value of -1 in other list next to the values list
 
-#create label
+#creates label
 Label(window, text="Enter the data to be parsed:", bg="black", fg="white", font="none 12 bold") .grid(row=1, column=0, sticky=W)
 
 #text entry
